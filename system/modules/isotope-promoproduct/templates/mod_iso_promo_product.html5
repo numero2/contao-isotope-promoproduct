@@ -1,0 +1,16 @@
+<!-- indexer::stop -->
+<section class="<?php echo $this->class; ?> block"<?php echo $this->cssID; ?><?php if ($this->style): ?> style="<?php echo $this->style; ?>"<?php endif; ?>>
+
+	<h2><?php echo $this->headline; ?></h2>
+
+	<figure class="image_container">
+		<a href="<?php echo $this->link; ?>" <?php if( $this->caption ) { ?>title="<?php echo $this->caption; ?>"<?php } ?>>
+			<img src="<?php echo $this->image; ?>" alt="" />
+		</a>
+		<?php if( $this->caption ) { ?>
+		<figcaption class="caption"><?php echo $this->caption; ?></figcaption>
+		<?php } ?>
+	</figure>
+
+</section>
+<!-- indexer::continue -->
